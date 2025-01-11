@@ -22,7 +22,8 @@
     "mongoose": "^8.9.2",
     "mongoose-delete": "^1.0.2",
     "mongoose-timestamp": "^0.6.0",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "cors": "^2.8.4"
   },
   "devDependencies": {
     "concurrently": "^9.1.1",
