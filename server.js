@@ -1,12 +1,22 @@
 const express = require('express')
 const connectDB = require('./config/db')
 const path = require('path')
+const cors = require('cors');
 
 const PORT = process.env.PORT || 5000
 const app = express()
 
 // connect database
 connectDB()
+
+const corsOptions = {
+    origin: ["https://tech-media-platform-ui.onrender.com"],
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true, // Enable credentials (e.g., cookies, authorization headers)
+    optionsSuccessStatus: 204, // Some legacy browsers (IE11, various SmartTVs) choke on 204
+  };
+
+app.use(cors(corsOptions));
 
 // init middleware
 app.use(express.json({extented: false})) // to read req.body
