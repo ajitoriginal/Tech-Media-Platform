@@ -7,6 +7,9 @@ const app = express()
 // connect database
 connectDB()
 
+// init middleware
+app.use(express.json({extented: false})) // to read req.body
+
 app.get('/', (req, res) => {
     const msg = 'API is running...'
     console.log(msg)
