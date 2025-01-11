@@ -18,6 +18,9 @@
     "redux-thunk": "^2.4.2",
     "web-vitals": "^4.2.4"
   },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.5"
+  },
   "scripts": {
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
     "build": "react-scripts build",
