@@ -5,7 +5,7 @@ import { deleteExperience } from '../../actions/profile';
 import formatDate from '../../utils/formatDate';
 
 const Experience = ({ experience, deleteExperience }) => {
-  const experiences = experience.map((exp) => (
+  const experiences = experience?.map((exp) => (
     <tr key={exp._id}>
       <td>{exp.company}</td>
       <td className='hide-sm'>{exp.title}</td>
