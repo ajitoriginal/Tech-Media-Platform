@@ -5,7 +5,7 @@ import { deleteEducation } from '../../actions/profile';
 import formatDate from '../../utils/formatDate';
 
 const Education = ({ education, deleteEducation }) => {
-  const educations = education.map((edu) => (
+  const educations = education?.map((edu) => (
     <tr key={edu._id}>
       <td>{edu.school}</td>
       <td className='hide-sm'>{edu.degree}</td>
