@@ -10,7 +10,7 @@ const app = express()
 connectDB()
 
 const corsOptions = {
-    origin: ["https://tech-media-platform-ui.onrender.com"],
+    origin: ["https://tech-media-platform-ui.onrender.com", "https://tech-media-platform.onrender.com"],
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true, // Enable credentials (e.g., cookies, authorization headers)
     optionsSuccessStatus: 204, // Some legacy browsers (IE11, various SmartTVs) choke on 204
